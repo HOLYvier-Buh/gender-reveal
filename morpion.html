@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Gender Reveal</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Righteous&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    </head>
+    <body>
+        <h2>WELCOME TO OUR GENDER REVEAL GAME</h1>
+        <div class="grid">
+            <div>
+                <button id="0" onclick="turn_card(this);"></button>
+                <button id="1" onclick="turn_card(this);"></button>
+                <button id="2" onclick="turn_card(this);"></button>
+            </div>
+            <div>
+                <button id="3" onclick="turn_card(this);"></button>
+                <button id="4" onclick="turn_card(this);"></button>
+                <button id="5" onclick="turn_card(this);"></button>
+            </div>
+            <div>
+                <button id="6" onclick="turn_card(this);"></button>
+                <button id="7" onclick="turn_card(this);"></button>
+                <button id="8" onclick="turn_card(this);"></button>
+            </div>
+        </div>
+        <div class="restart">
+            <button onclick="main()">Restart</button>
+        </div>
+        
+        <script src="script.js">
+            confetti();
+        </script>
+    </body>
+</html>
